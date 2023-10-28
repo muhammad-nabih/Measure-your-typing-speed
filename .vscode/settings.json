@@ -3,5 +3,8 @@
     "activityBar.background": "#283f3a",
     "titleBar.activeBackground": "#283f3a",
     "titleBar.activeForeground": "#fff"
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#3CCf4e"
   }
 }

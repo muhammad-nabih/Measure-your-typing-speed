@@ -7,31 +7,45 @@
   <meta name="description" content="speed , typing , gaming ">
   <title>Measure You Typing Speed </title>
   <link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="keyboard.png" type="image/x-icon">
+  <link rel="shortcut icon" href="keyboard.png" type="image/x-icon">
 </head>
 
 <body>
-<div class="game">
-  <div class="name">Typing Speed Test Game</div>
-  <div class="container">
-    <div class="message">
-      You Are Playing On
-      <span class="lvl"></span> Level
-      & You Have <span class="seconds"></span> Seconds To Type The Word
-    </div>
-    <div class="start">Start Playing</div>
-    <div class="the-word"></div>
-    <input type="text" class="input" />
-    <div class="upcoming-words">Words Will Show Here</div>
-    <div class="control">
-      <div class="time">Time Left: <span></span> Seconds</div>
-      <div class="score">
-        Score: <span class="got">0</span> From <span class="total"></span>
+  <section class="game">
+    <h1 class="name">Typing Speed Test Game</h1>
+    <div class="container">
+
+      <section class="game-levels">
+        <label for="levels"> Choose Level</label>
+        <select name="levels" id="levels">
+          <option value="Easy">Easy</option>
+          <option value="Normal">Normal</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </section>
+
+      <p class="message">
+        You Are Playing On
+        <span class="lvl"></span> Level
+        & You Have <span class="seconds"></span> Seconds To Type The Word
+      </p>
+      <button class="start">Start Playing</button>
+      <span class="the-word"></span>
+      <input onpaste="return false; " type="text" class="input" name="word" id="word"
+        placeholder="type the word which see ">
+      <p class="upcoming-words"></p>
+      <div class="control">
+        <p class="time">Time Left: <span></span> Seconds</p>
+        <p class="score">
+          Score: <span class="got">0</span> From <span class="total"></span>
+        </p>
       </div>
+
     </div>
-    <div class="finish"></div>
-  </div>
-</div>
+    <p class="finish"></p>
+  </section>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

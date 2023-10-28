@@ -17,9 +17,40 @@ body {
   min-height: 100vh;
 }
 
+/* ^ Levels  */
+
+.game-levels {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.game-levels label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.game-levels select {
+  flex-basis: 50%;
+  padding: 5px;
+  border-color: var(--main-color);
+  border-radius: 7px;
+
+}
+
+.game-levels select:focus {
+  outline-color: var(--main-color);
+}
+
 .container {
   margin: auto;
-  max-width: 900px;
+  width: 80%;
 }
 
 .name {
@@ -60,9 +91,18 @@ body {
   color: white;
   padding: 20px;
   cursor: pointer;
+  width: 100%;
+  transition: .3s;
+  display: none;
 }
 
+.start:hover {
+  background-color: #129f91;
+}
+
+
 .the-word {
+  display: block;
   text-align: center;
   font-weight: bold;
   font-size: 60px;
